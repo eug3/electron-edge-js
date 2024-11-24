@@ -74,7 +74,7 @@ if (process.platform === 'win32') {
 	if (dotnetPath) {
 		spawn(dotnetPath, ['restore'], { stdio: 'inherit', cwd: path.resolve(__dirname, '..', 'lib', 'bootstrap') })
 			.on('close', function() {
-				spawn(dotnetPath, ['build', '--configuration', 'Release'], { stdio: 'inherit', cwd: path.resolve(__dirname, '..', 'lib', 'bootstrap') })
+				spawn(dotnetPath, ['publish', '--configuration', 'Release'], { stdio: 'inherit', cwd: path.resolve(__dirname, '..', 'lib', 'bootstrap') })
 					.on('close', function() {
 						//require('./checkplatform');
 					});
