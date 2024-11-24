@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PreserveCompilationContext>true</PreserveCompilationContext>
     <AssemblyName>bootstrap</AssemblyName>
     <PackageId>bootstrap</PackageId>
@@ -9,7 +9,7 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
   </PropertyGroup>
 
-  <ItemGroup >
+  <ItemGroup>
     <ProjectReference Include="..\..\src\double\Edge.js\Edge.js.csproj" />
   </ItemGroup>
 
